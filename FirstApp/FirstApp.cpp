@@ -21,7 +21,7 @@ int main()
     cout << "Max of float\t" << FLT_MAX << endl;
     cout << "Max of double\t" << DBL_MAX << endl;*/
 
-    char ch = CHAR_MAX + 1;
+    /*char ch = CHAR_MAX + 1;
     int i = INT32_MAX + 1;
     unsigned int ui = UINT32_MAX + 1;
     long long lli = LLONG_MAX + 1;
@@ -33,9 +33,14 @@ int main()
     cout << "Overflow of unsigned int\t" << ui << endl;
     cout << "Overflow of long\t" << lli << endl;
     cout << "Overflow of float\t" << f << endl;
-    cout << "Overflow of double\t" << d << endl;
+    cout << "Overflow of double\t" << d << endl;*/
 
+    char c1, c2, c3, c4, c5;
 
+    cout << "Input Charracters:\t\a";
+    cin >> c1 >> c2 >> c3 >> c4 >> c5;
+    cout << "ASCII of these characters:\t" << int(c1) << " " << int(c2) << " "
+        << int(c3) << " " << int(c4) << " " << int(c5) << endl;
 
     system("pause>0");
 }
