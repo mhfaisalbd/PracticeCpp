@@ -18,5 +18,8 @@
     <ClCompile Include="FirstApp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Archived.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
