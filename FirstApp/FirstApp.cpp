@@ -6,11 +6,10 @@ using namespace std;
 
 int main()
 {
-    double x, y, z;
-    cout << "Input length of three arms of a triangle:\t";
-    cin >> x >> y >> z;
-    cout << ((x == y && y == z) ? "Equilateral" :
-    (x != y && x != z && y != z) ?
-    "scalene" : "isoscales") << endl;
+    int p = 6, q = 7;
+    cout << (p != q) << endl;
+    cout << (p == 6 && q == 6) << endl;
+    system("cls");
+    cout << (p == 7 || q == 7) << endl;
     system("pause>0");
 }
