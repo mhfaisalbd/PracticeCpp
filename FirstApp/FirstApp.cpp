@@ -6,30 +6,28 @@ using namespace std;
 
 int main()
 {
-    int month, year;
-    cout << "Input MM yyyy\t";
-    cin >> month >> year;
-
-    cout << "days in month:\t";
-    switch (month)
+    //Check divisible numbers (by x & y) in between p and q;
+    int p = 1000, q = 5000, x = 3, y = 5;
+	if(x > y)
+	{
+		y = x + y;
+		x = y - x;
+		y = y - x;
+	}
+	int gcd = y;
+	while (gcd % x != 0) gcd = gcd + y;
+	int preDiv = p / gcd;
+    if (p % gcd != 0)
     {
-    case 2: ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
-        ? cout << 29 : cout << 28; break;
-        case 4:
-        case 6:
-        case 9:
-        case 11: cout << 30; break;
-        case 1:
-        case 3:
-        case 5:
-        case 7:
-        case 8:
-        case 10:
-        case 12: cout << 31; break;
-
-        default:
-            cout << "Invalid Month!"; break;
+		preDiv++;
     }
-    cout << endl;
+	int div = preDiv * gcd;
+    while(div <= q)
+    {
+		cout << div << " ";
+		div += gcd;
+    }
+	cout << "\b" << endl;
+	
     system("pause>0");
 }
